@@ -208,7 +208,7 @@ app.get('/courses/:userId',(req,res)=>{
 });
 const course = {
     tableName: 'courses', 
-    getcourserByName: function(coursename, callback) {//select is used to fetch data(fetch user by email and by username)
+    getcourserByName: function(coursename, callback) {
         connection.query('SELECT * FROM ' + this.tableName + ' WHERE coursename = ?', coursename, callback);
 
     }

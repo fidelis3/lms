@@ -134,7 +134,7 @@ function displayCourseContent(courseContent) {
 
 function fetchLeaderboardData() {
     // Make AJAX request to fetch leaderboard data from server
-    fetch('/leaderboard')
+    fetch('/leaderboard' )
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
